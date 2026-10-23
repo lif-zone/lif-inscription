@@ -1,0 +1,22 @@
+{
+  "name": "lif-inscription",
+  "version": "2026.10.22",
+  "description": "Bitcoin and Lifcoin ordinal inscription viewer",
+  "author": {
+    "name": "Jungo Publishing Labs"
+  },
+  "license": "JPL DNA JEM",
+  "type": "module",
+  "lif": {
+    "webapp": "./main.js",
+    "web_exports": {
+      "./content/*": "lif:bitcoin/inscription/*"
+    }
+  },
+  "files": [
+    "main.js"
+  ],
+  "scripts": {
+    "serve": "npx lif-kernel serve.js -p 1807"
+  }
+}
