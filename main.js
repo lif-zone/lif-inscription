@@ -35,6 +35,8 @@ async function start(){
   let v;
   if (v=str.starts(p, '/preview/'))
     id = v.rest;
+  else if (v=str.starts(p, '/content/'))
+    id = v.rest;
   else if (v=p.match(/^\/[0-9a-f]{64}i\d+$/))
     id = p.slice(1);
   if (!id)
